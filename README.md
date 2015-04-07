@@ -1,4 +1,4 @@
-= L’énoncé du TP - level 1 =
+# L’énoncé du TP - level 1
 
 L’objectif pour ce TP est de créer une petite application de blogue simple et cela directement dans le fichier index.html.
 
