@@ -1,6 +1,6 @@
 # Formation AngularJS et industrialisation pour les développeurs front end
 Au programme :
-- Angularjs
+- Le framework Angularjs
   - faire une single page app avec AngularJS
   - comprendre le concept de data binding
   - comprendre et utiliser le concept de modèle
