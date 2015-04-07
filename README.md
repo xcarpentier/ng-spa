@@ -1,4 +1,4 @@
-= Formation AngularJS et industrialisation pour les développeurs front end =
+# Formation AngularJS et industrialisation pour les développeurs front end
 Au programme :
 - Angularjs
   - faire une single page app avec AngularJS
