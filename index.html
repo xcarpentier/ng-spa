@@ -7,32 +7,32 @@
   <style>
     section {
       margin: 0 auto;
-      width: 90%;
+      width: 77.77%;
     }
   </style>
 </head>
 <body ng-app>
-<section ng-init="articles=[]">
-  <header>
-    <h1>ng-spa - level 2</h1>
-  </header>
-  <article class="well" ng-repeat="article in articles">
+  <section ng-init="articles=[]">
     <header>
-      <h2>{{article.title}}</h2>
+      <h1>ng-spa - level 2</h1>
     </header>
-    <p>{{article.content}}</p>
-  </article>
-  <form ng-submit="articles.push({title: title, content: content});title='';content=''">
-    <div class="form-group">
-      <label for="title">Titre de l'article</label>
-      <input type="text" name="title" class="form-control" ng-model="title">
-    </div>
-    <div class="form-group">
-      <label for="content">Contenu de l'article</label>
-      <textarea name="content" class="form-control" ng-model="content"></textarea>
-    </div>
-    <button type="submit" class="btn btn-default">Ajouter un article</button>
-  </form>
-</section>
+    <article class="well" ng-repeat="article in articles">
+      <header>
+        <h2>{{article.title}}</h2>
+      </header>
+      <p>{{article.content}}</p>
+    </article>
+    <form ng-submit="articles.push({title: title, content: content}); title=''; content=''">
+      <div class="form-group">
+        <label for="title">Titre de l'article</label>
+        <input type="text" name="title" class="form-control" ng-model="title">
+      </div>
+      <div class="form-group">
+        <label for="content">Contenu de l'article</label>
+        <textarea name="content" class="form-control" ng-model="content"></textarea>
+      </div>
+      <button type="submit" class="btn btn-default">Ajouter un article</button>
+    </form>
+  </section>
 </body>
 </html>
