@@ -8,6 +8,6 @@ L’affichage est simple, on commence par afficher la liste des billets. Et en b
 
 Au début, il n’y a aucun billet de blogue, mais on voit le formulaire de saisi.
 
-= Support =
+# Support
 
 Dans un simple fichier HTML (index.html), on va importer la librairie AngularJS directement depuis une URL.
