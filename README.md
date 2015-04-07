@@ -11,7 +11,7 @@ Au programme :
   - comprendre et exploiter le système de composant angularjs : les directives
   - utiliser les animations avec angularjs
   - développer des services avec angularjs
-- Industrialisation
+- Industrialisation du cycle de développement
   - utiliser Bower pour les dépendances à d’autres librairies
   - utiliser Gulp pour développer et construire son application en vue de la production
   - écrire des tests unitaires et les exécuter avec Karma
