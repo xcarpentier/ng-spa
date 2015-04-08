@@ -91,7 +91,7 @@
             <small>(le titre est obligatoire pour créer un article)</small>
           </span>
         </label>
-        <input type="text" name="title" class="form-control" ng-model="post.title" required />
+        <input type="text" name="title" class="form-control" autocomplete="off" ng-model="post.title" required />
         <small>
           <ng-pluralize count="numberOfCar(post.title)"
                  when="{'0': 'Aucun caractère.',
