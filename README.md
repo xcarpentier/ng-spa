@@ -2,8 +2,8 @@
 
 Nouvelles fonctionnalités :
 - ajouter de la validation dans les formulaires pour éviter de poster des articles vides
-- ajouter un champ de filtres pour faire une recherche dans les articles
-- ajouter du nombre de caractères du titre et du contenu en temps réel et aussi dans l’affichage dans la liste
+- ajouter un champ de filtre pour faire une recherche dans les articles
+- ajouter le nombre de caractères du titre et du contenu en temps réel et aussi dans l’affichage dans la liste
 
 # Support
 
