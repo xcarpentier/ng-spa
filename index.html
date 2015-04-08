@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ng-spa - level 4</title>
+    <title>ng-spa - level 5</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <style>
@@ -15,30 +15,17 @@
       }
     </style>
     <script>
-      angular.module('myApp', []).controller('myController', myController);
-      function myController($scope){
-        $scope.articles = [];
-        $scope.post = {};
-        $scope.addPost = function(post){
-          post.createdAt = new Date().getTime();
-          post.titleLength = $scope.numberOfCar(post.title);
-          post.contentLength = $scope.numberOfCar(post.content);
-          $scope.articles.push(angular.copy(post));
-          $scope.post = {};
-          $scope.form.$setPristine();
-          $scope.form.$setUntouched();
-        }
-        $scope.numberOfCar = function(text){
-            return text ? (text + '').length : 0;
-        }
-      }
+      angular.module('myApp', []);
     </script>
+    <script src="main.controller.js" type="text/javascript"></script>
+    <script src="edit.controller.js" type="text/javascript"></script>
+    <script src="list.controller.js" type="text/javascript"></script>
   </head>
-  <body ng-app="myApp" ng-controller="myController">
+  <body ng-app="myApp" ng-controller="mainCtrl as main">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">ng-spa - level 4</a>
+          <a class="navbar-brand" href="#">ng-spa - level 5</a>
         </div>
         <div class="collapse navbar-collapse">
           <form class="navbar-form navbar-left" role="search">
@@ -49,8 +36,8 @@
         </div>
       </div>
     </nav>
-    <section>
-      <article class="well" ng-repeat="item in articles | filter:{$:search}">
+    <section ng-controller="listCtrl as list">
+      <article class="well" ng-repeat="item in list.articles | filter:{$:search}">
         <header>
           <h2 ng-click="item.editTitle = true" ng-show="!item.editTitle">{{item.title}}</h2>
           <div class="form-group" ng-show="item.editTitle">
@@ -82,7 +69,7 @@
       </footer>
     </article>
     <hr>
-    <form name="form" ng-submit="addPost(post)" novalidate>
+    <form name="form" ng-submit="edit.addPost(post)" novalidate ng-controller="editCtrl as edit">
       <div class="form-group"
         ng-class="{'has-error': (form.$submitted || form.title.$touched) && form.title.$error.required}">
         <label for="title" class="control-label">
@@ -93,7 +80,7 @@
         </label>
         <input type="text" name="title" class="form-control" autocomplete="off" ng-model="post.title" required />
         <small>
-          <ng-pluralize count="numberOfCar(post.title)"
+          <ng-pluralize count="edit.numberOfCar(post.title)"
                  when="{'0': 'Aucun caractère.',
                      'one': 'Un seule caractère.',
                      'other': '{} caractères.'}">
@@ -109,7 +96,7 @@
         </label>
         <textarea name="content" class="form-control" ng-model="post.content" required ></textarea>
         <small>
-          <ng-pluralize count="numberOfCar(post.content)"
+          <ng-pluralize count="edit.numberOfCar(post.content)"
                  when="{'0': 'Aucun caractère.',
                      'one': 'Un seule caractère.',
                      'other': '{} caractères.'}">
