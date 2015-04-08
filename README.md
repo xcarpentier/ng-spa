@@ -3,6 +3,8 @@
 Nouvelles fonctionnalités :
 
 
+
+Devenez un freelance qui cartonne : FreelanceBoost.fr
 # Support
 
 Dans un simple fichier HTML (index.html), on va importer la librairie AngularJS directement depuis une URL.
