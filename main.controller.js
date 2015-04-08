@@ -6,7 +6,7 @@
         .controller('mainCtrl', mainCtrl);
 
     /* @ngInject */
-    function mainCtrl($log, $scope) {
+    function mainCtrl($scope) {
         var vm = this;
         $scope.$on('postEvent', broadcastPost);
 

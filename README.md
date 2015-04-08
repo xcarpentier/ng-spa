@@ -1,6 +1,8 @@
 # L’énoncé du TP — level 5
 
-
+- Créer un fichier blog.module.js qui déclare le module
+- Utiliser la librairie toastr (https://github.com/jirikavi/AngularJS-Toaster) pour notifier de la sauvegarde d'un article
+- Créer un module utils.module.js contenant des utilitaires sous forme de services angular. Et y placer la fonction de comptage de caractère.
 
 # Support
 
