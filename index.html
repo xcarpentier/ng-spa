@@ -65,17 +65,20 @@
         </div>
       <footer>
         <em>{{item.createdAt | date:'medium'}}</em>
-        <em><ng-pluralize count="item.titleLength"
+        <em>
+          <ng-pluralize count="item.titleLength"
                  when="{'0': 'Le titre n\'a aucun caractère.',
                      'one': 'Le titre a {} caractère.',
                      'other': 'Le titre a {} caractères.'}">
           </ng-pluralize>
         </em>
-        <em>  <ng-pluralize count="item.contentLength"
+        <em>
+          <ng-pluralize count="item.contentLength"
                  when="{'0': 'Le billet n\'a aucun caractère.',
                      'one': 'Le billet a {} caractère.',
                      'other': 'Le billet a {} caractères.'}">
-          </ng-pluralize></em>
+          </ng-pluralize>
+        </em>
       </footer>
     </article>
     <hr>
