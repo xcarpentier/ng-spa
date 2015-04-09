@@ -2,6 +2,7 @@
 
 - Créer un fichier blog.module.js qui déclare le module
 - Utiliser la librairie toastr (https://github.com/jirikavi/AngularJS-Toaster) pour notifier de la sauvegarde d'un article
+- Utiliser la librairie angular-translate (https://github.com/angular-translate/angular-translate) et mettre en place l'internantionalisation dans le fichier index.html
 - Créer un module utils.module.js contenant des utilitaires sous forme de services angular. Et y placer la fonction de comptage de caractère.
 
 # Support
