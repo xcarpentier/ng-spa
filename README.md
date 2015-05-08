@@ -13,9 +13,4 @@ Au début, il n’y a aucun billet de blogue, mais on voit le formulaire de sais
 
 - initialiser une liste d'article avec la directive ng-init
 - avoir un champs input title et un champ textarea (avec un formulaire : voir ng-submit et ng-model)
-
 - pouvoir ajouter un article et l'afficher au dessus des input
-
-# Support
-
-Dans un simple fichier HTML (index.html), on va importer la librairie AngularJS directement depuis une URL.
