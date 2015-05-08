@@ -11,7 +11,9 @@ Au début, il n’y a aucun billet de blogue, mais on voit le formulaire de sais
 
 ## Pour ce TP
 
-Importer la librairie AngularJS et vérifier que ça marche !
+- initialiser une liste d'article avec la directive ng-init
+- avoir un champs input title et un champ textarea
+- pouvoir ajouter un article
 
 # Support
 
