@@ -12,8 +12,9 @@ Au début, il n’y a aucun billet de blogue, mais on voit le formulaire de sais
 ## Pour ce TP
 
 - initialiser une liste d'article avec la directive ng-init
-- avoir un champs input title et un champ textarea
-- pouvoir ajouter un article
+- avoir un champs input title et un champ textarea (avec un formulaire : voir ng-submit et ng-model)
+
+- pouvoir ajouter un article et l'afficher au dessus des input
 
 # Support
 
